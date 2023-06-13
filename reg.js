@@ -1,0 +1,14 @@
+
+		function PasswordReset(){
+			$('form.reset-password-form').on('submit', function(e){
+				e.preventDefault();
+				$('.reset-form').removeClass('d-block').addClass('d-none');
+
+				$('.reset-confirmation').addClass('d-block');
+			});
+		}
+
+		window.addEventListener('load', function(){
+			PasswordReset();
+		})
+	
